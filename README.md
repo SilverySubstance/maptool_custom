@@ -1,10 +1,4 @@
-![GitHub branch check runs](https://img.shields.io/github/check-runs/RPTools/MapTool/develop?label=Development%20Checks)
-[![Crowdin](https://badges.crowdin.net/maptool/localized.svg)](https://crowdin.com/project/maptool)
 ![GitHub License](https://img.shields.io/github/license/RPTools/maptool)
-![GitHub Downloads (all assets, latest release)](https://img.shields.io/github/downloads/RPTools/maptool/latest/total)
-
-![GitHub Issues or Pull Requests by label](https://img.shields.io/github/issues/RPTools/maptool/feature?label=Features&link=!%5BGitHub%20Issues%20or%20Pull%20Requests%20by%20label%5D(https%3A%2F%2Fimg.shields.io%2Fgithub%2Fissues%2FRPTools%2Fmaptool%2Ffeature%3Flabel%3DFeature%2520Requests%26link%3Dhttps%253A%252F%252Fgithub.com%252FRPTools%252Fmaptool%252Fissues%253Fq%253Dsort%25253Aupdated-desc%252520is%25253Aissue%252520is%25253Aopen%252520label%25253Afeature))
-![GitHub Issues or Pull Requests by label](https://img.shields.io/github/issues/RPTools/maptool/bug?label=Bugs&link=!%5BGitHub%20Issues%20or%20Pull%20Requests%20by%20label%5D(https%3A%2F%2Fimg.shields.io%2Fgithub%2Fissues%2FRPTools%2Fmaptool%2Ffeature%3Flabel%3DFeature%2520Requests%26link%3Dhttps%253A%252F%252Fgithub.com%252FRPTools%252Fmaptool%252Fissues%253Fq%253Dsort%25253Aupdated-desc%252520is%25253Aissue%252520is%25253Aopen%252520label%25253Afeature))
 
 ![Latest Release](https://img.shields.io/github/v/release/RPTools/MapTool?label=Stable%20Release)
 ![Latest Release Candidate](https://img.shields.io/github/v/release/RPTools/maptool?include_prereleases&filter=*-rc.*&label=Release%20Candidate)
@@ -12,7 +6,7 @@
 [![Discord](./doc/discord_100.webp)](discord.gg/dZy7HeYYVY)
 ![Discord](https://img.shields.io/discord/296230822262865920?label=MapTool%20Discord)
 
-# MapTool ![GitHub Repo stars](https://img.shields.io/github/stars/RPTools/MapTool)
+# MapTool
 
 This is an unofficial custom build of RPTools' Maptool Virtual Tabletop, that exposes the mouse cursor's map X and map Y position for use in macros.
 
