@@ -8,7 +8,7 @@
 
 # MapTool
 
-This is an unofficial custom build of RPTools' Maptool Virtual Tabletop, that exposes the mouse cursor's map X and map Y position for use in macros.
+This is an unofficial custom build of RPTools' Maptool Virtual Tabletop built from v1.18.7, that exposes the mouse cursor's map X and map Y position for use in macros.
 
 ## So what is MapTool?
 
