@@ -14,7 +14,7 @@
 
 # MapTool ![GitHub Repo stars](https://img.shields.io/github/stars/RPTools/MapTool)
 
-Welcome to the MapTool repository! This is the official repository for the MapTool Virtual Tabletop
+This is an unofficial custom build of RPTools' Maptool Virtual Tabletop, that exposes the mouse cursor's map X and map Y position for use in macros.
 
 ## So what is MapTool?
 
