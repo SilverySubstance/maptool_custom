@@ -47,8 +47,7 @@ public class MapFunctions extends AbstractFunction {
         0,
         2,
         "getCurrentMapID",
-            "getCursorMapX",
-            "getCursorMapY",
+        "getCursorMapPosition",
         "getAllMapIDs",
         "getMapIDs",
         "getAllMapNames",
@@ -86,22 +85,17 @@ public class MapFunctions extends AbstractFunction {
         throw new ParserException(I18N.getText("macro.function.map.none", functionName));
       }
       return currentZR.getZone().getId().toString();
-    } else if (functionName.equalsIgnoreCase("getCursorMapX")) {
+    } else if (functionName.equalsIgnoreCase("getCursorMapPosition")) {
       FunctionUtil.checkNumberParam(functionName, parameters, 0, 0);
       var statusBar = MapTool.getFrame().getCoordinateStatusBar();
       if (!statusBar.hasCoordinates()) {
         throw new ParserException(
-                I18N.getText("macro.function.general.argumentTypeInvalid", functionName));
+                //I18N.getText("macro.function.general.argumentTypeInvalid", functionName));
+                "getCursorMapPosition(): No cursor coordinates are available. "
+              + "Move the mouse over the map and try again.");
       }
-      return statusBar.getMapX();
-    } else if (functionName.equalsIgnoreCase("getCursorMapY")) {
-      FunctionUtil.checkNumberParam(functionName, parameters, 0, 0);
-      var statusBar = MapTool.getFrame().getCoordinateStatusBar();
-      if (!statusBar.hasCoordinates()) {
-        throw new ParserException(
-                I18N.getText("macro.function.general.argumentTypeInvalid", functionName));
-      }
-      return statusBar.getMapY();
+      return "{\"x\":" + statusBar.getMapX()
+           + ",\"y\":" + statusBar.getMapY() + "}";
     } else if (functionName.equalsIgnoreCase("getMapIDs")) {
       FunctionUtil.checkNumberParam(functionName, parameters, 1, 2);
       final var mapName = parameters.get(0).toString();
