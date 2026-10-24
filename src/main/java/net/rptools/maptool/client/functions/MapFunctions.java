@@ -47,6 +47,8 @@ public class MapFunctions extends AbstractFunction {
         0,
         2,
         "getCurrentMapID",
+            "getCursorMapX",
+            "getCursorMapY",
         "getAllMapIDs",
         "getMapIDs",
         "getAllMapNames",
@@ -84,6 +86,22 @@ public class MapFunctions extends AbstractFunction {
         throw new ParserException(I18N.getText("macro.function.map.none", functionName));
       }
       return currentZR.getZone().getId().toString();
+    } else if (functionName.equalsIgnoreCase("getCursorMapX")) {
+      FunctionUtil.checkNumberParam(functionName, parameters, 0, 0);
+      var statusBar = MapTool.getFrame().getCoordinateStatusBar();
+      if (!statusBar.hasCoordinates()) {
+        throw new ParserException(
+                I18N.getText("macro.function.general.argumentTypeInvalid", functionName));
+      }
+      return statusBar.getMapX();
+    } else if (functionName.equalsIgnoreCase("getCursorMapY")) {
+      FunctionUtil.checkNumberParam(functionName, parameters, 0, 0);
+      var statusBar = MapTool.getFrame().getCoordinateStatusBar();
+      if (!statusBar.hasCoordinates()) {
+        throw new ParserException(
+                I18N.getText("macro.function.general.argumentTypeInvalid", functionName));
+      }
+      return statusBar.getMapY();
     } else if (functionName.equalsIgnoreCase("getMapIDs")) {
       FunctionUtil.checkNumberParam(functionName, parameters, 1, 2);
       final var mapName = parameters.get(0).toString();
