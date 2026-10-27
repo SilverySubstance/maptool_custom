@@ -8,7 +8,7 @@
 
 # MapTool
 
-This is an unofficial custom build of RPTools' Maptool Virtual Tabletop built from v1.18.7, that exposes the mouse cursor's map X and map Y position for use in macros.
+This is an unofficial custom development build of RPTools' Maptool Virtual Tabletop built from v1.18.7, that exposes the mouse cursor's map X and map Y position for use in macros. This build does not need to be installed, and is simply run from the archive's executable.
 
 ## So what is MapTool?
 
@@ -51,7 +51,7 @@ development branches.
 
 ## For Users
 
-MapTool is available for Windows, Mac OS X, and Linux.
+MapTool's official build is available for Windows, Mac OS X, and Linux.
 
 You can download the latest stable release
 from
@@ -68,13 +68,6 @@ getting started using MapTool.
 The MapTool installers for each platform are self contained and include everthing needed to run
 MapTool.
 
-## For Developers
-
-See the [CONTRIBUTING.md](CONTRIBUTING.md) file for information on setting up your development
-environment and contributing to MapTool.
-
-### Requirements
-
 ### Resources
 
 - **Website:** https://rptools.net/
@@ -83,19 +76,4 @@ environment and contributing to MapTool.
 - **Discord:** https://discord.gg/dZy7HeYYVY
 - **Reddit:**  https://www.reddit.com/r/MapTool/
 - **Crowdin:** https://crowdin.com/project/maptool
-
-## Contributing to MapTool
-
-MapTool wouldn't be where it is today without the contributions of many people. We welcome
-contributions from anyone who is interested in helping out, you don't need to be a developer to
-contribute. For detailed information
-about how
-you can contribute to MapTool, please see our [Contributing Guide](CONTRIBUTING.md).
-
-Recommended IDE
-----------------
-We currently recommend [IntelliJ IDEA](https://www.jetbrains.com/idea/) as our editor of choice
-although Eclipse and other IDE's should work just fine as well. For IntelliJ IDEA, simply open the
-project folder and it will detect it as a Gradle project and you should be ready to go with minimal
-effort.
 
